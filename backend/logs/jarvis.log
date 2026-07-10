@@ -1,0 +1,4 @@
+2026-07-10 17:51:35 | INFO     | JARVIS | JARVIS has started successfully.
+2026-07-10 17:51:35 | WARNING  | JARVIS | Low memory warning.
+2026-07-10 17:51:35 | ERROR    | JARVIS | Sample error.
+2026-07-10 17:51:35 | CRITICAL | JARVIS | Critical system message.
