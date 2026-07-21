@@ -1,0 +1,23 @@
+"""
+=========================================================
+JARVIS API Router
+=========================================================
+
+Registers all API endpoints.
+
+Author: Abhinay Kumar
+Project: JARVIS
+=========================================================
+"""
+
+from fastapi import APIRouter
+
+from app.api.health import router as health_router
+from app.api.system import router as system_router
+from app.api.users import router as users_router
+
+api_router = APIRouter()
+
+api_router.include_router(health_router)
+api_router.include_router(system_router)
+api_router.include_router(users_router)

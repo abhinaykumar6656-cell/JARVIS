@@ -2,3 +2,136 @@
 2026-07-10 17:51:35 | WARNING  | JARVIS | Low memory warning.
 2026-07-10 17:51:35 | ERROR    | JARVIS | Sample error.
 2026-07-10 17:51:35 | CRITICAL | JARVIS | Critical system message.
+2026-07-19 18:42:11 | INFO     | JARVIS | JARVIS has started successfully.
+2026-07-19 18:42:11 | WARNING  | JARVIS | Low memory warning.
+2026-07-19 18:42:11 | ERROR    | JARVIS | Sample error.
+2026-07-19 18:42:11 | CRITICAL | JARVIS | Critical system message.
+2026-07-21 22:24:21 | ERROR    | JARVIS | Listener 'bad_listener' crashed while handling 'voice.command'.
+Traceback (most recent call last):
+  File "/Users/kothaabhinaykumar/Desktop/Jarvis/backend/app/core/event_bus.py", line 169, in publish
+    listener(event)
+  File "/Users/kothaabhinaykumar/Desktop/Jarvis/backend/tests/unit/test_event_bus.py", line 111, in bad_listener
+    raise RuntimeError("Boom")
+RuntimeError: Boom
+2026-07-21 22:33:20 | INFO     | JARVIS | ======================================
+2026-07-21 22:33:20 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 22:33:20 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 22:33:20 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 22:33:20 | INFO     | JARVIS | ======================================
+2026-07-21 22:37:48 | INFO     | JARVIS | ======================================
+2026-07-21 22:37:48 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 22:37:48 | INFO     | JARVIS | Goodbye!
+2026-07-21 22:37:48 | INFO     | JARVIS | ======================================
+2026-07-21 22:45:51 | INFO     | JARVIS | ======================================
+2026-07-21 22:45:51 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 22:45:51 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 22:45:51 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 22:45:51 | INFO     | JARVIS | ======================================
+2026-07-21 22:49:56 | INFO     | JARVIS | ======================================
+2026-07-21 22:49:56 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 22:49:56 | INFO     | JARVIS | Goodbye!
+2026-07-21 22:49:56 | INFO     | JARVIS | ======================================
+2026-07-21 23:16:06 | INFO     | JARVIS | ======================================
+2026-07-21 23:16:06 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:16:06 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:16:06 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:16:06 | INFO     | JARVIS | ======================================
+2026-07-21 23:22:47 | INFO     | JARVIS | ======================================
+2026-07-21 23:22:47 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:22:47 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:22:47 | INFO     | JARVIS | ======================================
+2026-07-21 23:22:47 | INFO     | JARVIS | ======================================
+2026-07-21 23:22:47 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:22:47 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:22:47 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:22:47 | INFO     | JARVIS | ======================================
+2026-07-21 23:23:03 | INFO     | JARVIS | ======================================
+2026-07-21 23:23:03 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:23:03 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:23:03 | INFO     | JARVIS | ======================================
+2026-07-21 23:23:27 | INFO     | JARVIS | ======================================
+2026-07-21 23:23:27 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:23:27 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:23:27 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:23:27 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:05 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:05 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:32:05 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:32:05 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:06 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:06 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:32:06 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:32:06 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:32:06 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:09 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:09 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:32:09 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:32:09 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:10 | INFO     | JARVIS | ======================================
+2026-07-21 23:32:10 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:32:10 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:32:10 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:32:10 | INFO     | JARVIS | ======================================
+2026-07-21 23:33:12 | INFO     | JARVIS | ======================================
+2026-07-21 23:33:12 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:33:12 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:33:12 | INFO     | JARVIS | ======================================
+2026-07-21 23:33:13 | INFO     | JARVIS | ======================================
+2026-07-21 23:33:13 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:33:13 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:33:13 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:33:13 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:29 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:29 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:34:29 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:34:29 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:29 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:29 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:34:29 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:34:29 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:34:29 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:55 | INFO     | JARVIS | ======================================
+2026-07-21 23:34:55 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:34:55 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:34:55 | INFO     | JARVIS | ======================================
+2026-07-21 23:39:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:39:00 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:39:00 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:39:00 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:39:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:00 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:52:00 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:52:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:00 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:52:00 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:52:00 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:52:00 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:16 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:16 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:52:16 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:52:16 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:16 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:16 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:52:16 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:52:16 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:52:16 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:28 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:28 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:52:28 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:52:28 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:46 | INFO     | JARVIS | ======================================
+2026-07-21 23:52:46 | INFO     | JARVIS | Starting JARVIS...
+2026-07-21 23:52:46 | INFO     | JARVIS | Version : 1.0.0
+2026-07-21 23:52:46 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-21 23:52:46 | INFO     | JARVIS | ======================================
+2026-07-21 23:53:22 | INFO     | JARVIS | ======================================
+2026-07-21 23:53:22 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-21 23:53:22 | INFO     | JARVIS | Goodbye!
+2026-07-21 23:53:22 | INFO     | JARVIS | ======================================
+2026-07-22 00:13:19 | INFO     | JARVIS | ======================================
+2026-07-22 00:13:19 | INFO     | JARVIS | Starting JARVIS...
+2026-07-22 00:13:19 | INFO     | JARVIS | Version : 1.0.0
+2026-07-22 00:13:19 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-22 00:13:19 | INFO     | JARVIS | ======================================
