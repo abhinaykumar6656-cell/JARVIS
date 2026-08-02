@@ -135,3 +135,204 @@ RuntimeError: Boom
 2026-07-22 00:13:19 | INFO     | JARVIS | Version : 1.0.0
 2026-07-22 00:13:19 | INFO     | JARVIS | Wake Word : Jarvis
 2026-07-22 00:13:19 | INFO     | JARVIS | ======================================
+2026-07-22 19:19:59 | INFO     | JARVIS | ======================================
+2026-07-22 19:19:59 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-22 19:19:59 | INFO     | JARVIS | Goodbye!
+2026-07-22 19:19:59 | INFO     | JARVIS | ======================================
+2026-07-22 19:19:59 | INFO     | JARVIS | ======================================
+2026-07-22 19:19:59 | INFO     | JARVIS | Starting JARVIS...
+2026-07-22 19:19:59 | INFO     | JARVIS | Version : 1.0.0
+2026-07-22 19:19:59 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-22 19:19:59 | INFO     | JARVIS | ======================================
+2026-07-22 19:21:03 | INFO     | JARVIS | ======================================
+2026-07-22 19:21:03 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-22 19:21:03 | INFO     | JARVIS | Goodbye!
+2026-07-22 19:21:03 | INFO     | JARVIS | ======================================
+2026-07-31 15:49:00 | INFO     | JARVIS | ======================================
+2026-07-31 15:49:00 | INFO     | JARVIS | Starting JARVIS...
+2026-07-31 15:49:00 | INFO     | JARVIS | Version : 1.0.0
+2026-07-31 15:49:00 | INFO     | JARVIS | Wake Word : Jarvis
+2026-07-31 15:49:00 | INFO     | JARVIS | ======================================
+2026-07-31 15:49:12 | INFO     | JARVIS | ======================================
+2026-07-31 15:49:12 | INFO     | JARVIS | Shutting down JARVIS...
+2026-07-31 15:49:12 | INFO     | JARVIS | Goodbye!
+2026-07-31 15:49:12 | INFO     | JARVIS | ======================================
+2026-08-02 11:24:06 | INFO     | JARVIS | ======================================
+2026-08-02 11:24:06 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 11:24:06 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 11:24:06 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 11:24:06 | INFO     | JARVIS | ======================================
+2026-08-02 11:25:41 | INFO     | JARVIS | New user registered: string
+2026-08-02 11:30:13 | INFO     | JARVIS | New user registered: abhinay
+2026-08-02 11:32:43 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 12:07:37 | INFO     | JARVIS | ======================================
+2026-08-02 12:07:37 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 12:07:37 | INFO     | JARVIS | Goodbye!
+2026-08-02 12:07:37 | INFO     | JARVIS | ======================================
+2026-08-02 12:07:38 | INFO     | JARVIS | ======================================
+2026-08-02 12:07:38 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 12:07:38 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 12:07:38 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 12:07:38 | INFO     | JARVIS | ======================================
+2026-08-02 12:07:55 | INFO     | JARVIS | ======================================
+2026-08-02 12:07:55 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 12:07:55 | INFO     | JARVIS | Goodbye!
+2026-08-02 12:07:55 | INFO     | JARVIS | ======================================
+2026-08-02 12:21:15 | INFO     | JARVIS | ======================================
+2026-08-02 12:21:15 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 12:21:15 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 12:21:15 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 12:21:15 | INFO     | JARVIS | ======================================
+2026-08-02 12:26:56 | INFO     | JARVIS | ======================================
+2026-08-02 12:26:56 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 12:26:56 | INFO     | JARVIS | Goodbye!
+2026-08-02 12:26:56 | INFO     | JARVIS | ======================================
+2026-08-02 12:27:23 | INFO     | JARVIS | ======================================
+2026-08-02 12:27:23 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 12:27:23 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 12:27:23 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 12:27:23 | INFO     | JARVIS | ======================================
+2026-08-02 12:30:50 | INFO     | JARVIS | ======================================
+2026-08-02 12:30:50 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 12:30:50 | INFO     | JARVIS | Goodbye!
+2026-08-02 12:30:50 | INFO     | JARVIS | ======================================
+2026-08-02 12:30:50 | INFO     | JARVIS | ======================================
+2026-08-02 12:30:50 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 12:30:50 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 12:30:50 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 12:30:50 | INFO     | JARVIS | ======================================
+2026-08-02 12:31:13 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 12:36:41 | INFO     | JARVIS | ======================================
+2026-08-02 12:36:41 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 12:36:41 | INFO     | JARVIS | Goodbye!
+2026-08-02 12:36:41 | INFO     | JARVIS | ======================================
+2026-08-02 12:36:41 | INFO     | JARVIS | ======================================
+2026-08-02 12:36:41 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 12:36:41 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 12:36:41 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 12:36:41 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:41 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:41 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 21:59:41 | INFO     | JARVIS | Goodbye!
+2026-08-02 21:59:41 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:42 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:42 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 21:59:42 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 21:59:42 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 21:59:42 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:49 | INFO     | JARVIS | ======================================
+2026-08-02 21:59:49 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 21:59:49 | INFO     | JARVIS | Goodbye!
+2026-08-02 21:59:49 | INFO     | JARVIS | ======================================
+2026-08-02 22:13:24 | INFO     | JARVIS | ======================================
+2026-08-02 22:13:24 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:13:24 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:13:24 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:13:24 | INFO     | JARVIS | ======================================
+2026-08-02 22:18:43 | INFO     | JARVIS | ======================================
+2026-08-02 22:18:43 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 22:18:43 | INFO     | JARVIS | Goodbye!
+2026-08-02 22:18:43 | INFO     | JARVIS | ======================================
+2026-08-02 22:22:24 | INFO     | JARVIS | ======================================
+2026-08-02 22:22:24 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:22:24 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:22:24 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:22:24 | INFO     | JARVIS | ======================================
+2026-08-02 22:23:49 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 22:28:25 | INFO     | JARVIS | ======================================
+2026-08-02 22:28:25 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 22:28:25 | INFO     | JARVIS | Goodbye!
+2026-08-02 22:28:25 | INFO     | JARVIS | ======================================
+2026-08-02 22:30:06 | INFO     | JARVIS | ======================================
+2026-08-02 22:30:06 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:30:06 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:30:06 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:30:06 | INFO     | JARVIS | ======================================
+2026-08-02 22:30:32 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 22:34:59 | INFO     | JARVIS | ======================================
+2026-08-02 22:34:59 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 22:34:59 | INFO     | JARVIS | Goodbye!
+2026-08-02 22:34:59 | INFO     | JARVIS | ======================================
+2026-08-02 22:35:03 | INFO     | JARVIS | ======================================
+2026-08-02 22:35:03 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:35:03 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:35:03 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:35:03 | INFO     | JARVIS | ======================================
+2026-08-02 22:36:00 | INFO     | JARVIS | ======================================
+2026-08-02 22:36:00 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 22:36:00 | INFO     | JARVIS | Goodbye!
+2026-08-02 22:36:00 | INFO     | JARVIS | ======================================
+2026-08-02 22:38:04 | INFO     | JARVIS | ======================================
+2026-08-02 22:38:04 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:38:04 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:38:04 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:38:04 | INFO     | JARVIS | ======================================
+2026-08-02 22:38:22 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 22:41:29 | INFO     | JARVIS | ======================================
+2026-08-02 22:41:29 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 22:41:29 | INFO     | JARVIS | Goodbye!
+2026-08-02 22:41:29 | INFO     | JARVIS | ======================================
+2026-08-02 22:42:20 | INFO     | JARVIS | ======================================
+2026-08-02 22:42:20 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 22:42:20 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 22:42:20 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 22:42:20 | INFO     | JARVIS | ======================================
+2026-08-02 22:42:39 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 23:02:43 | INFO     | JARVIS | ======================================
+2026-08-02 23:02:43 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 23:02:43 | INFO     | JARVIS | Goodbye!
+2026-08-02 23:02:43 | INFO     | JARVIS | ======================================
+2026-08-02 23:02:44 | INFO     | JARVIS | ======================================
+2026-08-02 23:02:44 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 23:02:44 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 23:02:44 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 23:02:44 | INFO     | JARVIS | ======================================
+2026-08-02 23:05:14 | INFO     | JARVIS | ======================================
+2026-08-02 23:05:14 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 23:05:14 | INFO     | JARVIS | Goodbye!
+2026-08-02 23:05:14 | INFO     | JARVIS | ======================================
+2026-08-02 23:09:43 | INFO     | JARVIS | ======================================
+2026-08-02 23:09:43 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 23:09:43 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 23:09:43 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 23:09:43 | INFO     | JARVIS | ======================================
+2026-08-02 23:10:15 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-02 23:12:08 | INFO     | JARVIS | ======================================
+2026-08-02 23:12:08 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-02 23:12:08 | INFO     | JARVIS | Goodbye!
+2026-08-02 23:12:08 | INFO     | JARVIS | ======================================
+2026-08-02 23:56:10 | INFO     | JARVIS | ======================================
+2026-08-02 23:56:10 | INFO     | JARVIS | Starting JARVIS...
+2026-08-02 23:56:10 | INFO     | JARVIS | Version : 1.0.0
+2026-08-02 23:56:10 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-02 23:56:10 | INFO     | JARVIS | ======================================
+2026-08-02 23:56:35 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-03 00:00:56 | INFO     | JARVIS | ======================================
+2026-08-03 00:00:56 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-03 00:00:56 | INFO     | JARVIS | Goodbye!
+2026-08-03 00:00:56 | INFO     | JARVIS | ======================================
+2026-08-03 00:00:57 | INFO     | JARVIS | ======================================
+2026-08-03 00:00:57 | INFO     | JARVIS | Starting JARVIS...
+2026-08-03 00:00:57 | INFO     | JARVIS | Version : 1.0.0
+2026-08-03 00:00:57 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-03 00:00:57 | INFO     | JARVIS | ======================================
+2026-08-03 00:01:15 | INFO     | JARVIS | ======================================
+2026-08-03 00:01:15 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-03 00:01:15 | INFO     | JARVIS | Goodbye!
+2026-08-03 00:01:15 | INFO     | JARVIS | ======================================
+2026-08-03 00:01:15 | INFO     | JARVIS | ======================================
+2026-08-03 00:01:15 | INFO     | JARVIS | Starting JARVIS...
+2026-08-03 00:01:15 | INFO     | JARVIS | Version : 1.0.0
+2026-08-03 00:01:15 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-03 00:01:15 | INFO     | JARVIS | ======================================
+2026-08-03 00:01:40 | INFO     | JARVIS | User 'abhinay' logged in.
+2026-08-03 00:02:27 | INFO     | JARVIS | ======================================
+2026-08-03 00:02:27 | INFO     | JARVIS | Shutting down JARVIS...
+2026-08-03 00:02:27 | INFO     | JARVIS | Goodbye!
+2026-08-03 00:02:27 | INFO     | JARVIS | ======================================
+2026-08-03 00:02:48 | INFO     | JARVIS | ======================================
+2026-08-03 00:02:48 | INFO     | JARVIS | Starting JARVIS...
+2026-08-03 00:02:48 | INFO     | JARVIS | Version : 1.0.0
+2026-08-03 00:02:48 | INFO     | JARVIS | Wake Word : Jarvis
+2026-08-03 00:02:48 | INFO     | JARVIS | ======================================
+2026-08-03 00:03:05 | INFO     | JARVIS | User 'abhinay' logged in.

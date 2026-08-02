@@ -1,22 +1,23 @@
 """
 =========================================================
-JARVIS User API
+JARVIS Users API
 =========================================================
 
-REST API endpoints for user management.
+Protected user endpoints.
 
 Author: Abhinay Kumar
 Project: JARVIS
 =========================================================
 """
 
-from fastapi import APIRouter
-from fastapi import Depends
+from fastapi import APIRouter, Depends
 
-from app.core.dependencies import get_user_service
-from app.schemas import UserCreate
-from app.schemas import UserResponse
-from app.services import UserService
+from app.core.dependencies import (
+    get_current_user,
+    get_user_service,
+)
+from app.schemas.user import UserResponse
+from app.services.user_service import UserService
 
 router = APIRouter(
     prefix="/users",
@@ -24,34 +25,16 @@ router = APIRouter(
 )
 
 
-@router.post(
-    "/",
-    response_model=UserResponse,
-    status_code=201,
-    summary="Create User",
-    description="Create a new user.",
-)
-def create_user(
-    user: UserCreate,
-    service: UserService = Depends(get_user_service),
-):
-    """
-    Create a new user.
-    """
-
-    return service.create_user(user)
-
-
 @router.get(
-    "/",
+    "",
     response_model=list[UserResponse],
-    summary="List Users",
 )
-def get_all_users(
+def get_users(
+    current_user=Depends(get_current_user),
     service: UserService = Depends(get_user_service),
 ):
     """
-    Return all users.
+    Get all users.
     """
 
     return service.get_all_users()
@@ -60,14 +43,14 @@ def get_all_users(
 @router.get(
     "/{user_id}",
     response_model=UserResponse,
-    summary="Get User by ID",
 )
-def get_user_by_id(
+def get_user(
     user_id: int,
+    current_user=Depends(get_current_user),
     service: UserService = Depends(get_user_service),
 ):
     """
-    Return a user by ID.
+    Get a single user.
     """
 
     return service.get_user_by_id(user_id)

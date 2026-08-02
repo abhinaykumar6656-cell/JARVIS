@@ -3,35 +3,56 @@
 JARVIS Security Utilities
 =========================================================
 
-Password hashing and JWT token management.
+Handles:
+
+• Password hashing
+• Password verification
+• JWT token creation
+• JWT token decoding
+• OAuth2 authentication
 
 Author: Abhinay Kumar
 Project: JARVIS
 =========================================================
 """
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 from jose import JWTError, jwt
 from passlib.context import CryptContext
+from fastapi.security import OAuth2PasswordBearer
 
 from app.core.config import settings
 
-# ---------------------------------------------------------------------
-# Password hashing
-# ---------------------------------------------------------------------
+# ==========================================================
+# Password Hashing
+# ==========================================================
 
 pwd_context = CryptContext(
     schemes=["bcrypt"],
     deprecated="auto",
 )
 
-# ---------------------------------------------------------------------
+# ==========================================================
+# OAuth2 Scheme
+# ==========================================================
+
+oauth2_scheme = OAuth2PasswordBearer(
+    tokenUrl="/auth/login",
+)
+
+# ==========================================================
 # JWT Configuration
-# ---------------------------------------------------------------------
+# ==========================================================
 
+SECRET_KEY = settings.SECRET_KEY
 ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = settings.ACCESS_TOKEN_EXPIRE_MINUTES
 
+
+# ==========================================================
+# Password Utilities
+# ==========================================================
 
 def hash_password(password: str) -> str:
     """
@@ -53,48 +74,53 @@ def verify_password(
     )
 
 
+# ==========================================================
+# JWT Utilities
+# ==========================================================
+
 def create_access_token(
-    subject: str,
-    expires_minutes: int | None = None,
+    data: dict,
+    expires_delta: timedelta | None = None,
 ) -> str:
     """
-    Create a JWT access token.
+    Create a signed JWT access token.
     """
 
-    if expires_minutes is None:
-        expires_minutes = settings.ACCESS_TOKEN_EXPIRE_MINUTES
+    to_encode = data.copy()
 
-    expire = datetime.now(timezone.utc) + timedelta(
-        minutes=expires_minutes
+    expire = (
+        datetime.now(UTC)
+        + (
+            expires_delta
+            if expires_delta
+            else timedelta(
+                minutes=ACCESS_TOKEN_EXPIRE_MINUTES
+            )
+        )
     )
 
-    payload = {
-        "sub": subject,
-        "exp": expire,
-    }
+    to_encode.update(
+        {
+            "exp": expire,
+        }
+    )
 
     return jwt.encode(
-        payload,
-        settings.SECRET_KEY,
+        to_encode,
+        SECRET_KEY,
         algorithm=ALGORITHM,
     )
 
 
-def decode_access_token(
-    token: str,
-):
+def decode_access_token(token: str) -> dict:
     """
-    Decode and validate a JWT access token.
+    Decode and validate a JWT token.
+
+    Raises JWTError if invalid.
     """
 
-    try:
-        payload = jwt.decode(
-            token,
-            settings.SECRET_KEY,
-            algorithms=[ALGORITHM],
-        )
-
-        return payload
-
-    except JWTError:
-        return None
+    return jwt.decode(
+        token,
+        SECRET_KEY,
+        algorithms=[ALGORITHM],
+    )
