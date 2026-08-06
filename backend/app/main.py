@@ -10,6 +10,8 @@ Responsible for:
 • Creating the FastAPI application
 • Initializing core services
 • Managing startup and shutdown events
+• Registering global exception handlers
+• Registering middlewares
 • Registering API routers
 
 Author: Abhinay Kumar
@@ -24,7 +26,9 @@ from fastapi import FastAPI
 from app.api.router import api_router
 from app.core.config import settings
 from app.core.event_bus import event_bus
+from app.core.handlers import register_exception_handlers
 from app.core.logger import logger
+from app.core.middleware import register_middlewares
 
 
 # ==========================================================
@@ -44,7 +48,7 @@ async def lifespan(app: FastAPI):
     logger.info("Wake Word : %s", settings.WAKE_WORD)
     logger.info("======================================")
 
-    # Store shared objects in application state
+    # Store shared application objects
     app.state.event_bus = event_bus
 
     yield
@@ -65,6 +69,20 @@ app = FastAPI(
     description="Personal AI Assistant",
     lifespan=lifespan,
 )
+
+
+# ==========================================================
+# Register Global Exception Handlers
+# ==========================================================
+
+register_exception_handlers(app)
+
+
+# ==========================================================
+# Register Middlewares
+# ==========================================================
+
+register_middlewares(app)
 
 
 # ==========================================================

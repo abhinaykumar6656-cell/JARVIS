@@ -3,8 +3,13 @@
 JARVIS Configuration Management
 =========================================================
 
-This module loads and validates all application settings
-from the .env file.
+Loads and validates all application settings from
+environment variables.
+
+Supports multiple environments:
+- Development
+- Testing
+- Production
 
 Author: Abhinay Kumar
 Project: JARVIS
@@ -15,74 +20,112 @@ from functools import lru_cache
 from pathlib import Path
 
 from pydantic import Field
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings
+from pydantic_settings import SettingsConfigDict
 
-# -------------------------------------------------------
-# Project Root (backend/)
-# -------------------------------------------------------
+
+# ==========================================================
+# Project Root Directory
+# ==========================================================
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 
+# ==========================================================
+# Settings
+# ==========================================================
+
 class Settings(BaseSettings):
     """
-    Global application settings.
+    Global application configuration.
     """
 
-    # --------------------------------------------------
-    # APPLICATION
-    # --------------------------------------------------
+    # ======================================================
+    # Application
+    # ======================================================
 
-    APP_NAME: str = Field(...)
-    APP_VERSION: str = Field(...)
+    APP_NAME: str = Field(default="JARVIS")
 
-    DEBUG: bool = Field(default=False)
+    APP_VERSION: str = Field(default="1.0.0")
+
+    APP_ENV: str = Field(default="development")
+
+    DEBUG: bool = Field(default=True)
+
     API_PREFIX: str = Field(default="/api/v1")
 
-    # --------------------------------------------------
-    # SERVER
-    # --------------------------------------------------
+
+    # ======================================================
+    # Server
+    # ======================================================
 
     HOST: str = Field(default="127.0.0.1")
+
     PORT: int = Field(default=8000)
 
-    # --------------------------------------------------
-    # SECURITY
-    # --------------------------------------------------
 
-    SECRET_KEY: str = Field(...)
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = Field(default=30)
+    # ======================================================
+    # Security
+    # ======================================================
 
-    # --------------------------------------------------
-    # DATABASE
-    # --------------------------------------------------
+    SECRET_KEY: str
 
-    DATABASE_URL: str = Field(...)
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = Field(
+        default=60,
+    )
 
-    # --------------------------------------------------
-    # LOGGING
-    # --------------------------------------------------
+
+    # ======================================================
+    # Database
+    # ======================================================
+
+    DATABASE_URL: str
+
+
+    # ======================================================
+    # Logging
+    # ======================================================
 
     LOG_LEVEL: str = Field(default="INFO")
-    LOG_FILE: str = Field(default="logs/jarvis.log")
 
-    # --------------------------------------------------
+    LOG_FILE: str = Field(
+        default="logs/jarvis.log",
+    )
+
+
+    # ======================================================
     # AI
-    # --------------------------------------------------
+    # ======================================================
 
-    DEFAULT_LLM: str = Field(default="ollama")
-    OLLAMA_URL: str = Field(default="http://localhost:11434")
+    DEFAULT_LLM: str = Field(
+        default="ollama",
+    )
 
-    # --------------------------------------------------
-    # VOICE
-    # --------------------------------------------------
+    OLLAMA_URL: str = Field(
+        default="http://127.0.0.1:11434",
+    )
 
-    WAKE_WORD: str = Field(default="Jarvis")
-    SLEEP_TIMEOUT: int = Field(default=300)
+    OLLAMA_MODEL: str = Field(
+        default="llama3.2",
+    )
 
-    # --------------------------------------------------
-    # Pydantic Configuration
-    # --------------------------------------------------
+
+    # ======================================================
+    # Voice
+    # ======================================================
+
+    WAKE_WORD: str = Field(
+        default="Jarvis",
+    )
+
+    SLEEP_TIMEOUT: int = Field(
+        default=300,
+    )
+
+
+    # ======================================================
+    # Configuration
+    # ======================================================
 
     model_config = SettingsConfigDict(
         env_file=BASE_DIR / ".env",
@@ -92,17 +135,21 @@ class Settings(BaseSettings):
     )
 
 
+# ==========================================================
+# Cached Settings
+# ==========================================================
+
 @lru_cache
 def get_settings() -> Settings:
     """
-    Returns the application settings.
-    The settings are cached so the .env file is read only once.
+    Return cached application settings.
     """
+
     return Settings()
 
 
-# Global settings object
-settings = get_settings()
+# ==========================================================
+# Global Settings Instance
+# ==========================================================
 
-SECRET_KEY: str
-ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+settings = get_settings()
